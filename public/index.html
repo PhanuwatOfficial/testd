@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CRUD Users</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <form id="user-form">
+        <input type="text" id="department" placeholder="Department" required />
+        <input type="text" id="line" placeholder="Line" required />
+        <input type="text" id="orderNumber" placeholder="Order Number" required />
+        <input type="text" id="productCode" placeholder="Product Code" required />
+        <input type="text" id="productName" placeholder="Product Name" required />
+        <input type="text" id="productUnit" placeholder="Product Unit" required />
+        <input type="number" id="productQuantity" placeholder="Product Quantity" required />
+        <input type="date" id="requestedDate" placeholder="Requested Date" required />
+        <input type="date" id="productionDate" placeholder="Production Date" required />
+        <input type="number" id="producedQuantity" placeholder="Produced Quantity" required />
+        <input type="date" id="finishDate" placeholder="Finish Date" required />
+        <input type="text" id="productionStatus" placeholder="Production Status" required />
+        <input type="date" id="recordDate" placeholder="Record Date" required />
+        <input type="time" id="productionTime" placeholder="Production Time" required />
+        <button type="submit">Add User</button>
+    </form>
+    <ul id="user-list"></ul>
+
+    <!-- ฟอร์มแก้ไขผู้ใช้ -->
+    <form id="edit-form" style="display: none">
+        <h3>Edit User</h3>
+        <input type="text" id="edit-department" placeholder="Department" required />
+        <input type="text" id="edit-line" placeholder="Line" required />
+        <input type="text" id="edit-orderNumber" placeholder="Order Number" required />
+        <input type="text" id="edit-productCode" placeholder="Product Code" required />
+        <input type="text" id="edit-productName" placeholder="Product Name" required />
+        <input type="text" id="edit-productUnit" placeholder="Product Unit" required />
+        <input type="number" id="edit-productQuantity" placeholder="Product Quantity" required />
+        <input type="date" id="edit-requestedDate" placeholder="Requested Date" required />
+        <input type="date" id="edit-productionDate" placeholder="Production Date" required />
+        <input type="number" id="edit-producedQuantity" placeholder="Produced Quantity" required />
+        <input type="date" id="edit-finishDate" placeholder="Finish Date" required />
+        <input type="text" id="edit-productionStatus" placeholder="Production Status" required />
+        <input type="date" id="edit-recordDate" placeholder="Record Date" required />
+        <input type="time" id="edit-productionTime" placeholder="Production Time" required />
+        <button type="submit">Update User</button>
+        <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
